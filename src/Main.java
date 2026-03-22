@@ -35,5 +35,23 @@ public class Main {
         }
 
         System.out.println("\nLiczba dostępnych książek: " + biblioteka.policzDostepneKsiazki());
+
+        //z4
+        System.out.println("\n--- Wypożyczanie książek ---");
+        Biblioteka.wypozyczKsiazke("Hobbit", janKowalski, biblioteka);
+        Biblioteka.wypozyczKsiazke("Duma i Uprzedzenie", alaKot, biblioteka);
+
+        System.out.println("\n--- Dostępne książki po wypożyczeniu ---");
+        biblioteka.wypiszDostepneKsiazki();
+
+        System.out.println("\n--- Zwroty książek ---");
+        Biblioteka.zwrocKsiazke("Hobbit", janKowalski, biblioteka);
+
+        System.out.println("\n--- Dostępne książki po zwrocie ---");
+        biblioteka.wypiszDostepneKsiazki();
+
+        System.out.println("\n--- Dane czytelników ---");
+        janKowalski.wypiszDane();
+        alaKot.wypiszDane();
     }
 }
