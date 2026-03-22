@@ -8,5 +8,14 @@ public class Main {
         harryPotter.wypiszInfo();
         harryPotter.wypozycz();
         harryPotter.zwroc();
+
+        //z2
+        Czytelnik janKowalski = new Czytelnik("Jan", "Kowalski", 1);
+        System.out.println(janKowalski);
+        janKowalski.wypiszDane();
+
+        Czytelnik alaKot = new Czytelnik("Ala", "Kot", 2);
+        System.out.println(alaKot);
+        alaKot.wypiszDane();
     }
 }
